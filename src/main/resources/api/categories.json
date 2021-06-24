@@ -1,0 +1,18 @@
+[
+    {
+        "name":"Boys",
+        "products":"http://localhost:8080/categories/boys/products"
+    },
+    {
+        "name":"Girls",
+        "products":"http://localhost:8080/categories/girls/products"
+    },
+    {
+        "name":"Men",
+        "products":"http://localhost:8080/categories/men/products"
+    },
+    {
+        "name":"Women",
+        "products":"http://localhost:8080/categories/women/products"
+    }
+]

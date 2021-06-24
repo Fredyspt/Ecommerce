@@ -1,0 +1,15 @@
+{
+    "id":"",
+    "name":"",
+    "lastName":"",
+    "phoneNumber":"",
+    "address": {
+        "street":"",
+        "apartmentNumber":"",
+        "zipCode":"",
+        "state":"",
+        "city":""
+    },
+    "email":"", 
+    "paymentData":"http://localhost:8080/user/payment"
+}
