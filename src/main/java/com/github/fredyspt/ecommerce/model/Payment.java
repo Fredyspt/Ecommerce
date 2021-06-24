@@ -15,14 +15,14 @@ public class Payment {
     public Payment(Map<String, Object> dict) {
         id = counter++;
 
-        if (dict.containsKey(Constant.KEY_NAME)) {
-            this.setCardNumber((Integer) dict.get(Constant.KEY_NAME));
+        if (dict.containsKey(Constant.KEY_CARD_NUMBER)) {
+            this.setCardNumber((Integer) dict.get(Constant.KEY_CARD_NUMBER));
         }
-        if (dict.containsKey(Constant.KEY_NAME)) {
-            this.setCvv((Integer) dict.get(Constant.KEY_NAME));
+        if (dict.containsKey(Constant.KEY_CVV)) {
+            this.setCvv((Integer) dict.get(Constant.KEY_CVV));
         }
-        if (dict.containsKey(Constant.KEY_NAME)) {
-            this.setExpirationDate((String) dict.get(Constant.KEY_NAME));
+        if (dict.containsKey(Constant.KEY_EXPIRATION_DATE)) {
+            this.setExpirationDate((String) dict.get(Constant.KEY_EXPIRATION_DATE));
         }
     }
 
