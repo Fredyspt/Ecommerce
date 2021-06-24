@@ -2,7 +2,6 @@ package com.github.fredyspt.ecommerce.model;
 
 import com.github.fredyspt.ecommerce.util.Constant;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;

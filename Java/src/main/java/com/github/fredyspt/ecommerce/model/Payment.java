@@ -3,7 +3,6 @@ package com.github.fredyspt.ecommerce.model;
 import com.github.fredyspt.ecommerce.util.Constant;
 
 import java.util.Map;
-import java.util.UUID;
 
 public class Payment {
     private static int counter;
