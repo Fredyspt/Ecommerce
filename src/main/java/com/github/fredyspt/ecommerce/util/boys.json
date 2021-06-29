@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "name": "4-piece linen set",
+    "description": "Set with linen and cotton vest and shorts, cotton poplin shirt and pre-tied bow tie. Vest lined with buttons and decorative pockets on the front. Knee-length shorts with adjustable elastic waist, zip and button fastening, diagonal side pockets and welt pockets at the back. Shirt with English collar, buttons at the front, short sleeves with stitched fold and rounded hem. Borrowed bow tie with adjustable elastic and plastic closure.",
+    "brand": "H&M",
+    "size": "3-4Y",
+    "color": "Beige",
+    "price": "699"
+  },
+  {
+    "id": 1,
+    "name": "2 piece set",
+    "description": "Set with slightly oversized sweatshirt and joggers in cotton blend sweatshirt fabric with a washed appearance. Sweatshirt with raglan sleeves, a kangaroo pocket, and ribbed trim around the neck, cuffs and hem. Joggers with elastic waist, drawstring, patch pockets and lined elastic at the hem. Soft brushed interior.",
+    "brand": "H&M",
+    "size": "6-7Y",
+    "color": "Blue",
+    "price": "429"
+  },
+  {
+    "id": 2,
+    "name": "Shirt and tie/bow",
+    "description": "Short-sleeved cotton shirt with tie/bow. Shirt with a classic collar, buttons at the front, a yoke with pleats at the back and a rounded hem. Tie/bow in woven fabric with elastic.",
+    "brand": "H&M",
+    "size": "4-5Y",
+    "color": "White",
+    "price": "299"
+  },
+  {
+    "id": 3,
+    "name": "T-shirt and shorts",
+    "description": "Soft cotton T-shirt and shorts set. Knitted shirt with printed design on the front. Fabric shorts with elastic drawstring at the waist, side pockets and a pocket on the back.",
+    "brand": "H&M",
+    "size": "4-5Y",
+    "color": "Beige",
+    "price": "329"
+  },
+  {
+    "id": 4,
+    "name": "Two-piece cotton set",
+    "description": "Set with short-sleeved shirt and shorts in cotton fabric. Shirt with classic collar, buttons at the front, small embroidered detail on the top and rounded hem. Knee-length shorts with adjustable elastic waist, button zipper closure, side pockets and a decorative back pocket.",
+    "brand": "H&M",
+    "size": "10-11Y",
+    "color": "Beige/Blue",
+    "price": "499"
+  },
+  {
+    "id": 5,
+    "name": "Set 2 pieces with design.",
+    "description": "Set with matching shirt and shorts in printed jersey. Classic jersey t-shirt with ribbed trim around the neck and short sleeves with stitched fold. Knee-length poplin shorts with lined elastic and drawstring at the waist, decorative fastening, diagonal side pockets and a pocket on the back.",
+    "brand": "H&M",
+    "size": "5-6Y",
+    "color": "White",
+    "price": "449"
+  }
+]

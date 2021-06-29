@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "name": "Mom Loose-fit trousers",
+    "description": "Five-pocket twill ankle-length trousers. Loose-fitting model, high waist, zip and button closure, and legs that are closer to the ankles.",
+    "brand": "H&M",
+    "size": "S",
+    "color": "Black",
+    "price": "329"
+  },
+  {
+    "id": 1,
+    "name": "Linen-blend skirt",
+    "description": "Short, fitted skirt in linen and viscose fabric. High-waisted model with a hidden side zipper and a short opening on one side at the front. Lined.",
+    "brand": "H&M",
+    "size": "M",
+    "color": "White",
+    "price": "449"
+  },
+  {
+    "id": 2,
+    "name": "Leather sandals",
+    "description": "Soft leather sandals with a square design and padded straps with knot detail to the front. Leather lining and insoles. Heel 1.6 cm.",
+    "brand": "H&M",
+    "size": "36",
+    "color": "Beige",
+    "price": "999"
+  },
+  {
+    "id": 3,
+    "name": "Fitted jacket",
+    "description": "Single-breasted jacket in woven fabric with a slightly fitted waist. Notch lapels, welt pockets with flaps at the front, decorative buttons at the cuffs and a single opening at the back. Lined. Garment partially made from recycled polyester.",
+    "brand": "H&M",
+    "size": "XS",
+    "color": "Mint",
+    "price": "749"
+  },
+  {
+    "id": 4,
+    "name": "Sleeveless ribbed top",
+    "description": "Sleeveless crop top in cotton jersey with ribbed design. Model with a fitted and narrow cut on the upper part with a crossed back.",
+    "brand": "H&M",
+    "size": "M",
+    "color": "Black",
+    "price": "99"
+  },
+  {
+    "id": 5,
+    "name": "Sweatshirt with collar",
+    "description": "Sweatshirt with a classic collar and button band on the top. Loose-fitting model with dropped shoulders and a ribbed trim around the cuffs. Soft brushed interior.",
+    "brand": "H&M",
+    "size": "XS",
+    "color": "Gray",
+    "price": "499"
+  }
+]
