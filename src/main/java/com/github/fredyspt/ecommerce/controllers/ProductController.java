@@ -10,7 +10,7 @@ import java.util.ArrayList;
 // @RestController - every method in the class returns a domain object instead of a view
 @RestController
 public class ProductController {
-    ArrayList<Product> products = Product.getDummyData();
+    ArrayList<Product> products = Product.getGirlsProducts();
 
     // Allowing requests from origins
     @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST})

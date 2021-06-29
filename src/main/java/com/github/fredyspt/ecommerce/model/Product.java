@@ -10,7 +10,7 @@ public class Product {
     private static int counter;
     private final int id;
     private String name;
-    private ProductDescription description;
+    private String description;
     private String brand;
     private ProductSize size;
     private String color;
@@ -67,22 +67,12 @@ public class Product {
         this.name = name;
     }
 
-    public ProductDescription getDescription() {
+    public String getDescription() {
         return description;
     }
 
     public void setDescription(String description) {
-        switch (description){
-            case "Shirt":
-                this.description = ProductDescription.Shirt;
-                break;
-            case "Jeans":
-                this.description = ProductDescription.Jeans;
-                break;
-            case "Shoes":
-                this.description = ProductDescription.Shoes;
-                break;
-        }
+        this.description = description;
     }
 
     public String getBrand() {
@@ -140,32 +130,61 @@ public class Product {
         product1.put(Constant.KEY_DESCRIPTION, "Set with top and shorts in soft cotton jersey " +
                 "with a printed design. Top with dropped shoulders and short sleeves with olán. " +
                 "Matching shorts with soft elastic at the waist.");
-        product1.put(Constant.KEY_BRAND, "Polo");
-        product1.put(Constant.KEY_SIZE, "M");
-        product1.put(Constant.KEY_COLOR, "Blue");
-        product1.put(Constant.KEY_PRICE, 1500);
+        product1.put(Constant.KEY_BRAND, "H&M");
+        product1.put(Constant.KEY_SIZE, "S");
+        product1.put(Constant.KEY_COLOR, "Beige");
+        product1.put(Constant.KEY_PRICE, 299);
 
         Map<String, Object> product2 = new TreeMap<>();
-        product2.put(Constant.KEY_NAME, "AE Jeans");
-        product2.put(Constant.KEY_DESCRIPTION, "Jeans");
-        product2.put(Constant.KEY_BRAND, "AE");
-        product2.put(Constant.KEY_SIZE, "L");
-        product2.put(Constant.KEY_COLOR, "Blue");
-        product2.put(Constant.KEY_PRICE, 2000);
+        product2.put(Constant.KEY_NAME, "2-piece cotton set v2");
+        product2.put(Constant.KEY_DESCRIPTION, "Set with shorts overalls and cotton shirt. " +
+                "Shorts in washed twill with buttons to the top and straps with " +
+                "knot detail to the front. Pockets on the side seams and a pocket " +
+                "on the back. Knitted shirt with narrow border around the neck and short puffed sleeves.");
+        product2.put(Constant.KEY_BRAND, "H&M");
+        product2.put(Constant.KEY_SIZE, "M");
+        product2.put(Constant.KEY_COLOR, "Green");
+        product2.put(Constant.KEY_PRICE, 399);
 
         Map<String, Object> product3 = new TreeMap<>();
-        product3.put(Constant.KEY_NAME, "Adidas shoes");
-        product3.put(Constant.KEY_DESCRIPTION, "Shoes");
-        product3.put(Constant.KEY_BRAND, "Adidas");
-        product3.put(Constant.KEY_SIZE, "XS");
-        product3.put(Constant.KEY_COLOR, "White");
-        product3.put(Constant.KEY_PRICE, 1200);
+        product3.put(Constant.KEY_NAME, "Set of 2 pieces");
+        product3.put(Constant.KEY_DESCRIPTION, "Kids Exclusive. Set with jumpsuit dress and knitted top." +
+                " Lightweight denim dress with crossover straps at the back, elastic at " +
+                "the back of the waist and gathered seams on the skirt to create volume. " +
+                "Knit top with narrow edge around the neckline and voluminous woven " +
+                "sleeves lined with knit for maximum support.");
+        product3.put(Constant.KEY_BRAND, "H&M");
+        product3.put(Constant.KEY_SIZE, "M");
+        product3.put(Constant.KEY_COLOR, "Blue");
+        product3.put(Constant.KEY_PRICE, 699);
+
+        Map<String, Object> product4 = new TreeMap<>();
+        product4.put(Constant.KEY_NAME, "Set of 2 pieces flowers");
+        product4.put(Constant.KEY_DESCRIPTION, "Set with strappy top and skirt in viscose fabric. " +
+                "Top with smock stitch, straight cut at the neck, narrow straps and flared peplum. " +
+                "Skirt with smock stitch on the top and olán seam on the hem.");
+        product4.put(Constant.KEY_BRAND, "H&M");
+        product4.put(Constant.KEY_SIZE, "L");
+        product4.put(Constant.KEY_COLOR, "Blue");
+        product4.put(Constant.KEY_PRICE, 499);
+
+        Map<String, Object> product5 = new TreeMap<>();
+        product5.put(Constant.KEY_NAME, "Striped 2-piece set");
+        product5.put(Constant.KEY_DESCRIPTION, "Set with sleeveless top and knitted pants. " +
+                "Ribbed top with a narrow cut on top. Ankle-length trousers with lined elastic " +
+                "at the waist and wide, straight-cut legs.");
+        product5.put(Constant.KEY_BRAND, "H&M");
+        product5.put(Constant.KEY_SIZE, "L");
+        product5.put(Constant.KEY_COLOR, "Yellow");
+        product5.put(Constant.KEY_PRICE, 399);
 
 
         ArrayList<Product> dummyProducts = new ArrayList<>();
         dummyProducts.add(new Product(product1));
         dummyProducts.add(new Product(product2));
         dummyProducts.add(new Product(product3));
+        dummyProducts.add(new Product(product4));
+        dummyProducts.add(new Product(product5));
 
         return dummyProducts;
     }
