@@ -6,7 +6,7 @@
     "brand": "H&M",
     "size": "4-5Y",
     "color": "Beige",
-    "price": "299"
+    "price": 299
   },
   {
     "id": 1,
@@ -15,7 +15,7 @@
     "brand": "H&M",
     "size": "7-8Y",
     "color": "Green",
-    "price": "399"
+    "price": 399
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
     "brand": "H&M",
     "size": "8-9Y",
     "color": "Blue",
-    "price": "699"
+    "price": 699
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "brand": "H&M",
     "size": "12-14Y",
     "color": "Blue",
-    "price": "499"
+    "price": 499
   },
   {
     "id": 4,
@@ -42,6 +42,6 @@
     "brand": "H&M",
     "size": "12-13Y",
     "color": "Yellow",
-    "price": "399"
+    "price": 399
   }
 ]

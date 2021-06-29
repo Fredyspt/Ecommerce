@@ -6,7 +6,7 @@
     "brand": "H&M",
     "size": "3-4Y",
     "color": "Beige",
-    "price": "699"
+    "price": 699
   },
   {
     "id": 1,
@@ -15,7 +15,7 @@
     "brand": "H&M",
     "size": "6-7Y",
     "color": "Blue",
-    "price": "429"
+    "price": 429
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
     "brand": "H&M",
     "size": "4-5Y",
     "color": "White",
-    "price": "299"
+    "price": 299
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "brand": "H&M",
     "size": "4-5Y",
     "color": "Beige",
-    "price": "329"
+    "price": 329
   },
   {
     "id": 4,
@@ -42,15 +42,6 @@
     "brand": "H&M",
     "size": "10-11Y",
     "color": "Beige/Blue",
-    "price": "499"
-  },
-  {
-    "id": 5,
-    "name": "Set 2 pieces with design.",
-    "description": "Set with matching shirt and shorts in printed jersey. Classic jersey t-shirt with ribbed trim around the neck and short sleeves with stitched fold. Knee-length poplin shorts with lined elastic and drawstring at the waist, decorative fastening, diagonal side pockets and a pocket on the back.",
-    "brand": "H&M",
-    "size": "5-6Y",
-    "color": "White",
-    "price": "449"
+    "price": 499
   }
 ]

@@ -6,7 +6,7 @@
     "brand": "H&M",
     "size": "M",
     "color": "Beige",
-    "price": "749"
+    "price": 749
   },
   {
     "id": 1,
@@ -15,7 +15,7 @@
     "brand": "H&M",
     "size": "S",
     "color": "Green",
-    "price": "399"
+    "price": 399
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
     "brand": "H&M",
     "size": "M",
     "color": "Blue",
-    "price": "449"
+    "price": 449
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "brand": "H&M",
     "size": "M",
     "color": "Black",
-    "price": "449"
+    "price": 449
   },
   {
     "id": 4,
@@ -42,15 +42,6 @@
     "brand": "H&M",
     "size": "S",
     "color": "Mix",
-    "price": "449"
-  },
-  {
-    "id": 5,
-    "name": "Knitted turtleneck sweater.",
-    "description": "High neck sweater in fine cotton knit. Long-sleeved model with ribbed cuffs and hem.",
-    "brand": "H&M",
-    "size": "S",
-    "color": "Beige",
-    "price": "399"
+    "price": 449
   }
 ]
