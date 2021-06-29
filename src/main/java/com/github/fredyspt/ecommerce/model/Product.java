@@ -4,13 +4,12 @@ import com.github.fredyspt.ecommerce.util.Constant;
 
 import java.util.ArrayList;
 import java.util.Map;
-import java.util.TreeMap;
 
 public class Product {
     private static int counter;
     private final int id;
     private String name;
-    private ProductDescription description;
+    private String description;
     private String brand;
     private ProductSize size;
     private String color;
@@ -44,40 +43,6 @@ public class Product {
         }
     }
 
-    public static ArrayList<Product> getDummyData(){
-        Map<String, Object> product1 = new TreeMap<>();
-        product1.put(Constant.KEY_NAME, "Polo shirt");
-        product1.put(Constant.KEY_DESCRIPTION, "Shirt");
-        product1.put(Constant.KEY_BRAND, "Polo");
-        product1.put(Constant.KEY_SIZE, "M");
-        product1.put(Constant.KEY_COLOR, "Blue");
-        product1.put(Constant.KEY_PRICE, 1500);
-
-        Map<String, Object> product2 = new TreeMap<>();
-        product2.put(Constant.KEY_NAME, "AE Jeans");
-        product2.put(Constant.KEY_DESCRIPTION, "Jeans");
-        product2.put(Constant.KEY_BRAND, "AE");
-        product2.put(Constant.KEY_SIZE, "L");
-        product2.put(Constant.KEY_COLOR, "Blue");
-        product2.put(Constant.KEY_PRICE, 2000);
-
-        Map<String, Object> product3 = new TreeMap<>();
-        product3.put(Constant.KEY_NAME, "Adidas shoes");
-        product3.put(Constant.KEY_DESCRIPTION, "Shoes");
-        product3.put(Constant.KEY_BRAND, "Adidas");
-        product3.put(Constant.KEY_SIZE, "XS");
-        product3.put(Constant.KEY_COLOR, "White");
-        product3.put(Constant.KEY_PRICE, 1200);
-
-
-        ArrayList<Product> dummyProducts = new ArrayList<>();
-        dummyProducts.add(new Product(product1));
-        dummyProducts.add(new Product(product2));
-        dummyProducts.add(new Product(product3));
-
-        return dummyProducts;
-    }
-
     public static Product getProductById(int id, ArrayList<Product> products){
         Product selectedProduct = null;
         for(Product product : products){
@@ -101,22 +66,12 @@ public class Product {
         this.name = name;
     }
 
-    public ProductDescription getDescription() {
+    public String getDescription() {
         return description;
     }
 
     public void setDescription(String description) {
-        switch (description){
-            case "Shirt":
-                this.description = ProductDescription.Shirt;
-                break;
-            case "Jeans":
-                this.description = ProductDescription.Jeans;
-                break;
-            case "Shoes":
-                this.description = ProductDescription.Shoes;
-                break;
-        }
+        this.description = description;
     }
 
     public String getBrand() {
@@ -167,4 +122,5 @@ public class Product {
     public void setPrice(int price) {
         this.price = price;
     }
+
 }

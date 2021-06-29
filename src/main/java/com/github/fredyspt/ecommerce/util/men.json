@@ -1,0 +1,47 @@
+[
+  {
+    "id": 0,
+    "name": "Linen bomber jacket",
+    "description": "Linen bomber jacket with slightly high neckline and front zipper. Side zip pockets, one inside pocket and ribbed trim around the cuffs and hem. Lined.",
+    "brand": "H&M",
+    "size": "M",
+    "color": "Beige",
+    "price": 749
+  },
+  {
+    "id": 1,
+    "name": "Regular Fit shirt with linen",
+    "description": "Shirt in linen and cotton fabric. Model with an English collar, a classic front and a yoke on the back. One open top pocket, long sleeves with button band and button cuffs. Rounded hem. Regular Fit - classic cut with a slightly adjusted waist for freedom of movement and a sleek, comfortable silhouette.",
+    "brand": "H&M",
+    "size": "S",
+    "color": "Green",
+    "price": 399
+  },
+  {
+    "id": 2,
+    "name": "Joggers Regular Fit",
+    "description": "Linen and cotton joggers with lined elastic and drawstring at the waist. Model with diagonal side pockets, welt pockets at the back and lined elastic at the hem. Regular Fit - classic cut with good freedom of movement on thighs and knees to create a straight and comfortable silhouette.",
+    "brand": "H&M",
+    "size": "M",
+    "color": "Blue",
+    "price": 449
+  },
+  {
+    "id": 3,
+    "name": "Regular Fit Hoodie",
+    "description": "Lightweight sweatshirt with a zipper at the front, a double-layer hat with a drawstring, side pockets, and a ribbed edge at the cuffs and hem.",
+    "brand": "H&M",
+    "size": "M",
+    "color": "Black",
+    "price": 449
+  },
+  {
+    "id": 4,
+    "name": "3-pack of Slim Fit T-shirts",
+    "description": "Soft cotton crew neck T-shirts.",
+    "brand": "H&M",
+    "size": "S",
+    "color": "Mix",
+    "price": 449
+  }
+]

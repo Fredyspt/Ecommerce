@@ -2,15 +2,15 @@ package com.github.fredyspt.ecommerce.controllers;
 
 import com.github.fredyspt.ecommerce.exceptions.GenericBadRequest;
 import com.github.fredyspt.ecommerce.model.Product;
+import com.github.fredyspt.ecommerce.helper.ProductsData;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.ArrayList;
 
 @RequestMapping("/api/*")
 // @RestController - every method in the class returns a domain object instead of a view
 @RestController
 public class ProductController {
-    ArrayList<Product> products = Product.getDummyData();
+    ArrayList<Product> products = ProductsData.getAllProducts();
 
     // Allowing requests from origins
     @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST})
