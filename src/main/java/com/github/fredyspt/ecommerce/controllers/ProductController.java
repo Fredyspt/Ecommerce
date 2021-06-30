@@ -1,10 +1,9 @@
 package com.github.fredyspt.ecommerce.controllers;
 
 import com.github.fredyspt.ecommerce.exceptions.GenericBadRequest;
-import com.github.fredyspt.ecommerce.helper.ProductsData;
 import com.github.fredyspt.ecommerce.model.Product;
+import com.github.fredyspt.ecommerce.helper.ProductsData;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.ArrayList;
 
 @RequestMapping("/api/*")
