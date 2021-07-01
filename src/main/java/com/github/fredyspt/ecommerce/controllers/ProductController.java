@@ -1,23 +1,25 @@
 package com.github.fredyspt.ecommerce.controllers;
 
 import com.github.fredyspt.ecommerce.exceptions.GenericBadRequest;
-import com.github.fredyspt.ecommerce.model.Product;
 import com.github.fredyspt.ecommerce.helper.ProductsData;
+import com.github.fredyspt.ecommerce.model.Product;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.ArrayList;
+import java.util.List;
 
 @RequestMapping("/api/*")
 // @RestController - every method in the class returns a domain object instead of a view
 @RestController
 public class ProductController {
-    ArrayList<Product> products = ProductsData.getAllProducts();
+    public ArrayList<Product> products = ProductsData.getAllProducts();
 
     // Allowing requests from origins
     @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST})
 
     @GetMapping("/product")
     // RequestParam binds value of the query string parameter name into the name parameter of this method.
-    public ArrayList<Product> getProducts (){
+    public List<Product> getProducts (){
         return products;
     }
 
@@ -28,5 +30,11 @@ public class ProductController {
         }
 
         return Product.getProductById(productId, products);
+    }
+
+    @GetMapping("/product/boys")
+    // RequestParam binds value of the query string parameter name into the name parameter of this method.
+    public List<Product> getBoysProducts (){
+        return ProductsData.getBoysProducts();
     }
 }
