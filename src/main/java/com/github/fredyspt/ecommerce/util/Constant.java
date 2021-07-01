@@ -10,6 +10,7 @@ public class Constant {
     public final static String KEY_USER = "user";
 
     // PRODUCT
+    public static int NUMBER_OF_PRODUCTS = 20;
     public final static String KEY_DESCRIPTION = "description";
     public final static String KEY_BRAND = "brand";
     public final static String KEY_SIZE = "size";

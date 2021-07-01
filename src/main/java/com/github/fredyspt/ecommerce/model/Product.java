@@ -1,22 +1,36 @@
 package com.github.fredyspt.ecommerce.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.github.fredyspt.ecommerce.util.Constant;
 
 import java.util.ArrayList;
 import java.util.Map;
 
 public class Product {
-    private static int counter;
-    private final int id;
+    @JsonProperty("id")
+    private int id;
+
+    @JsonProperty("name")
     private String name;
+
+    @JsonProperty("description")
     private String description;
+
+    @JsonProperty("brand")
     private String brand;
+
+    @JsonProperty("size")
     private ProductSize size;
+
+    @JsonProperty("color")
     private String color;
+
+    @JsonProperty("price")
     private int price;
 
     public Product(Map<String, Object> dict){
-        id = counter++;
+        Constant.NUMBER_OF_PRODUCTS++;
+        id = Constant.NUMBER_OF_PRODUCTS - 1;
 
         if (dict.containsKey(Constant.KEY_NAME)) {
             this.setName((String) dict.get(Constant.KEY_NAME));
@@ -42,6 +56,10 @@ public class Product {
             this.setPrice((Integer) dict.get(Constant.KEY_PRICE));
         }
     }
+
+    public Product(){
+    }
+
 
     public static Product getProductById(int id, ArrayList<Product> products){
         Product selectedProduct = null;
