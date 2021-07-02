@@ -3,7 +3,7 @@ package com.github.fredyspt.ecommerce.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.github.fredyspt.ecommerce.util.Constant;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class Product {
@@ -61,7 +61,7 @@ public class Product {
     }
 
 
-    public static Product getProductById(int id, ArrayList<Product> products){
+    public static Product getProductById(int id, List<Product> products){
         Product selectedProduct = null;
         for(Product product : products){
             if(product.getId() == id){
