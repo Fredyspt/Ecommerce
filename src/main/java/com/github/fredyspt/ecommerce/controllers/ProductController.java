@@ -37,4 +37,19 @@ public class ProductController {
     public List<Product> getBoysProducts (){
         return ProductsData.getBoysProducts();
     }
+    @GetMapping("/product/girls")
+    // RequestParam binds value of the query string parameter name into the name parameter of this method.
+    public List<Product> getGirlsProducts (){
+        return ProductsData.getGirlsProducts();
+    }
+    @GetMapping("/product/men")
+    // RequestParam binds value of the query string parameter name into the name parameter of this method.
+    public List<Product> getMenProducts (){
+        return ProductsData.getMenProducts();
+    }
+    @GetMapping("/product/women")
+    // RequestParam binds value of the query string parameter name into the name parameter of this method.
+    public List<Product> getWomenProducts (){
+        return ProductsData.getWomenProducts();
+    }
 }
