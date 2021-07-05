@@ -1,5 +1,8 @@
 package com.github.fredyspt.ecommerce.model;
 
+import com.github.fredyspt.ecommerce.util.Constant;
+
+import java.util.Map;
 import java.util.UUID;
 
 public class User {
@@ -11,11 +14,32 @@ public class User {
     private String email;
     private Payment paymentCard;
 
-    public User(String name, String lastName, String email){
+    public User(Map<String, Object> dict){
         id = UUID.randomUUID().toString();
-        this.name = name;
-        this.lastName = lastName;
-        this.email = email;
+
+        if (dict.containsKey(Constant.KEY_NAME)) {
+            this.setName((String) dict.get(Constant.KEY_NAME));
+        }
+
+        if (dict.containsKey(Constant.KEY_LAST_NAME)) {
+            this.setLastName((String) dict.get(Constant.KEY_LAST_NAME));
+        }
+
+        if (dict.containsKey(Constant.KEY_EMAIL)) {
+            this.setEmail((String) dict.get(Constant.KEY_EMAIL));
+        }
+
+        if (dict.containsKey(Constant.KEY_PHONE_NUMBER)) {
+            this.setPhoneNumber((Integer) dict.get(Constant.KEY_PHONE_NUMBER));
+        }
+
+        if (dict.containsKey(Constant.KEY_ADDRESS)) {
+            this.setAddress((Address) dict.get(Constant.KEY_ADDRESS));
+        }
+
+        if (dict.containsKey(Constant.KEY_PAYMENT_CARD)) {
+            this.setPaymentCard((Payment) dict.get(Constant.KEY_PAYMENT_CARD));
+        }
     }
 
     public String getId() {

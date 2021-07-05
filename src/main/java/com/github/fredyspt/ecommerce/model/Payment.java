@@ -17,9 +17,11 @@ public class Payment {
         if (dict.containsKey(Constant.KEY_CARD_NUMBER)) {
             this.setCardNumber((Integer) dict.get(Constant.KEY_CARD_NUMBER));
         }
+
         if (dict.containsKey(Constant.KEY_CVV)) {
             this.setCvv((Integer) dict.get(Constant.KEY_CVV));
         }
+
         if (dict.containsKey(Constant.KEY_EXPIRATION_DATE)) {
             this.setExpirationDate((String) dict.get(Constant.KEY_EXPIRATION_DATE));
         }

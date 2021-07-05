@@ -57,6 +57,8 @@ public class Product {
         }
     }
 
+    // Para que Jackson pueda interpretar el String de JSON debe existir un
+    // constructor vacio
     public Product(){
     }
 
