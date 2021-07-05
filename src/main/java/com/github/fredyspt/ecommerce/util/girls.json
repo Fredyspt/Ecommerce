@@ -4,7 +4,7 @@
     "name": "2-piece cotton set",
     "description": "Set with top and shorts in soft cotton jersey with a printed design. Top with dropped shoulders and short sleeves with olán. Matching shorts with soft elastic at the waist.",
     "brand": "H&M",
-    "size": "4-5Y",
+    "size": "XS",
     "color": "Beige",
     "price": 299
   },
@@ -13,7 +13,7 @@
     "name": "2-piece cotton set v2",
     "description": "Set with shorts overalls and cotton shirt. Shorts in washed twill with buttons to the top and straps with knot detail to the front. Pockets on the side seams and a pocket on the back. Knitted shirt with narrow border around the neck and short puffed sleeves.",
     "brand": "H&M",
-    "size": "7-8Y",
+    "size": "S",
     "color": "Green",
     "price": 399
   },
@@ -22,7 +22,7 @@
     "name": "Set of 2 pieces",
     "description": "Kids Exclusive. Set with jumpsuit dress and knitted top. Lightweight denim dress with crossover straps at the back, elastic at the back of the waist and gathered seams on the skirt to create volume. Knit top with narrow edge around the neckline and voluminous woven sleeves lined with knit for maximum support.",
     "brand": "H&M",
-    "size": "8-9Y",
+    "size": "M",
     "color": "Blue",
     "price": 699
   },
@@ -31,7 +31,7 @@
     "name": "Set of 2 pieces flowers",
     "description": "Set with strappy top and skirt in viscose fabric. Top with smock stitch, straight cut at the neck, narrow straps and flared peplum. Skirt with smock stitch on the top and olán seam on the hem.",
     "brand": "H&M",
-    "size": "12-14Y",
+    "size": "L",
     "color": "Blue",
     "price": 499
   },
@@ -40,7 +40,7 @@
     "name": "Striped 2-piece set",
     "description": "Set with sleeveless top and knitted pants. Ribbed top with a narrow cut on top. Ankle-length trousers with lined elastic at the waist and wide, straight-cut legs.",
     "brand": "H&M",
-    "size": "12-13Y",
+    "size": "XL",
     "color": "Yellow",
     "price": 399
   }

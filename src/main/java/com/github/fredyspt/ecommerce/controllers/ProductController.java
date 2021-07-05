@@ -1,6 +1,6 @@
 package com.github.fredyspt.ecommerce.controllers;
 
-import com.github.fredyspt.ecommerce.exceptions.GenericBadRequest;
+import com.github.fredyspt.ecommerce.exceptions.NotFoundException;
 import com.github.fredyspt.ecommerce.helper.ProductsData;
 import com.github.fredyspt.ecommerce.model.Product;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +13,16 @@ import java.util.List;
 public class ProductController {
     public List<Product> products = ProductsData.getAllProducts();
 
+    private Product findProductById(int id, List<Product> products) {
+        Product product = Product.getProductById(id, products);
+
+        if(product == null){
+            throw new NotFoundException();
+        }
+
+        return product;
+    }
+
     // Allowing requests from origins
     @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST})
 
@@ -21,45 +31,25 @@ public class ProductController {
         return products;
     }
 
-    @GetMapping("/product/{productId}")
-    public Product findProductById(@PathVariable(value = "productId") int productId){
-        if(Product.getProductById(productId, products) == null){
-            throw new GenericBadRequest("Could not find an item with the given id");
-        }
-
-        return Product.getProductById(productId, products);
-    }
 //MEN PRODUCT ID
     @GetMapping("/product/men/{id}")
-    public Product findMenProductById(@PathVariable(value = "id") int id){
-      if(Product.getMenProductById(id, products) == null){
-          throw new GenericBadRequest("Could not find an item with the given id");
-     }
-      return Product.getMenProductById(id, products);
+    public Product getMenProductById(@PathVariable(value = "id") int id){
+        return findProductById(id, ProductsData.getMenProducts());
     }
-//BOYS PRODUCT ID
+
     @GetMapping("/product/boys/{id}")
     public Product findBoysProductById(@PathVariable(value = "id") int id) {
-        if (Product.getBoysProductById(id, products) == null) {
-            throw new GenericBadRequest("Could not find an item with the given id");
-        }
-        return Product.getBoysProductById(id, products);
+        return findProductById(id, ProductsData.getBoysProducts());
     }
 //GIRLS PRODUCT ID
     @GetMapping("/product/girls/{id}")
     public Product findGirlsProductById(@PathVariable(value = "id") int id){
-        if(Product.getGirlsProductById(id, products) == null){
-            throw new GenericBadRequest("Could not find an item with the given id");
-        }
-        return Product.getGirlsProductById(id, products);
+        return findProductById(id, ProductsData.getGirlsProducts());
     }
 //WOMEN PRODUCT ID
     @GetMapping("/product/women/{id}")
     public Product findWomenProductById(@PathVariable(value = "id") int id){
-        if(Product.getWomenProductById(id, products) == null){
-            throw new GenericBadRequest("Could not find an item with the given id");
-        }
-        return Product.getWomenProductById(id, products);
+        return findProductById(id, ProductsData.getWomenProducts());
     }
 
     @GetMapping("/product/boys")
