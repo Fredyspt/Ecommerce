@@ -29,6 +29,38 @@ public class ProductController {
 
         return Product.getProductById(productId, products);
     }
+//MEN PRODUCT ID
+    @GetMapping("/product/men/{id}")
+    public Product findMenProductById(@PathVariable(value = "id") int id){
+      if(Product.getMenProductById(id, products) == null){
+          throw new GenericBadRequest("Could not find an item with the given id");
+     }
+      return Product.getMenProductById(id, products);
+    }
+//BOYS PRODUCT ID
+    @GetMapping("/product/boys/{id}")
+    public Product findBoysProductById(@PathVariable(value = "id") int id) {
+        if (Product.getBoysProductById(id, products) == null) {
+            throw new GenericBadRequest("Could not find an item with the given id");
+        }
+        return Product.getBoysProductById(id, products);
+    }
+//GIRLS PRODUCT ID
+    @GetMapping("/product/girls/{id}")
+    public Product findGirlsProductById(@PathVariable(value = "id") int id){
+        if(Product.getGirlsProductById(id, products) == null){
+            throw new GenericBadRequest("Could not find an item with the given id");
+        }
+        return Product.getGirlsProductById(id, products);
+    }
+//WOMEN PRODUCT ID
+    @GetMapping("/product/women/{id}")
+    public Product findWomenProductById(@PathVariable(value = "id") int id){
+        if(Product.getWomenProductById(id, products) == null){
+            throw new GenericBadRequest("Could not find an item with the given id");
+        }
+        return Product.getWomenProductById(id, products);
+    }
 
     @GetMapping("/product/boys")
     public List<Product> getBoysProducts (){
