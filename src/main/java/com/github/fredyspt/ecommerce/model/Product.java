@@ -3,7 +3,7 @@ package com.github.fredyspt.ecommerce.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.github.fredyspt.ecommerce.util.Constant;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class Product {
@@ -62,8 +62,52 @@ public class Product {
     public Product(){
     }
 
+//GET ALL THE PRODUCTS BY ID
+    public static Product getProductById(int id, List<Product> products){
+        Product selectedProduct = null;
+        for(Product product : products){
+            if(product.getId() == id){
+                selectedProduct = product;
+            }
+        }
 
-    public static Product getProductById(int id, ArrayList<Product> products){
+        return selectedProduct;
+    }
+//GET MEN PRODUCTS BY ID
+    public static Product getMenProductById(int id, List<Product> products){
+        Product selectedProduct = null;
+        for(Product product : products){
+            if(product.getId() == id){
+                selectedProduct = product;
+            }
+        }
+
+        return selectedProduct;
+    }
+//GET BOYS PRODUCTS BY ID
+    public static Product getBoysProductById(int id, List<Product> products){
+        Product selectedProduct = null;
+        for(Product product : products){
+            if(product.getId() == id){
+                selectedProduct = product;
+            }
+        }
+
+        return selectedProduct;
+    }
+//GET GIRLS PRODUCTS BY ID
+    public static Product getGirlsProductById(int id, List<Product> products){
+        Product selectedProduct = null;
+        for(Product product : products){
+            if(product.getId() == id){
+                selectedProduct = product;
+            }
+        }
+
+        return selectedProduct;
+    }
+//GET WOMEN PRODUCTS BY ID
+    public static Product getWomenProductById(int id, List<Product> products){
         Product selectedProduct = null;
         for(Product product : products){
             if(product.getId() == id){
