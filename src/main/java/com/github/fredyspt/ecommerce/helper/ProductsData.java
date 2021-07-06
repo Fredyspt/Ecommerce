@@ -23,8 +23,8 @@ public class ProductsData {
         return ReadJsonFile.readJson("women.json");
     }
 
-    public static List<Product> getAllProducts(){
-        List<Product> products = new ArrayList<>();
+    public static ArrayList<Product> getAllProducts(){
+        ArrayList<Product> products = new ArrayList<>();
         products.addAll(getBoysProducts());
         products.addAll(getGirlsProducts());
         products.addAll(getWomenProducts());
